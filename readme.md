@@ -57,3 +57,15 @@ npm link
 ```
 > aws apigateway create-deployment --rest-api-id 33645q629e --stage-name dev --description "Version 0.5.1"
 ```
+
+### Development
+
+If you want to contribute to this project, please clone+merge request me.
+
+
+Tips for working with a dev npm package
+ - Uninstall the package if you already have it pulled
+ - git clone the package repo
+ - ```npm install``` (of course)
+ - ```npm link```  This creates a global link on your machine so other projects can access your source
+ - Move to your dependent project and ```npm link serverless-existing-api-plugin``` to create a link in your project's node_modules 

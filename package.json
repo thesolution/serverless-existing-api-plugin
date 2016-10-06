@@ -1,0 +1,17 @@
+{
+  "name": "serverless-existing-api-plugin",
+  "version": "0.0.1",
+  "description": "Serverless extension to deploy to existing APIGateways",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "existing",
+    "api",
+    "serverless",
+    "plugin"
+  ],
+  "author": "Colin Johnson cjohnson@tradestation.com",
+  "license": "ISC"
+}

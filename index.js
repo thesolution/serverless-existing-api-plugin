@@ -18,7 +18,8 @@ class RedirectPlugin {
             this.apiId = this.serverless.service.custom.apiId;
             this.rootResource = this.serverless.service.custom.rootResource;
             const resources = this.serverless.service.provider.compiledCloudFormationTemplate.Resources;
-            const parameters = this.serverless.service.provider.compiledCloudFormationTemplate.Parameters;
+            const parameters = this.serverless.service.provider.compiledCloudFormationTemplate.Parameters || {};
+            this.serverless.service.provider.compiledCloudFormationTemplate.Parameters = parameters;
             const outputs = this.serverless.service.provider.compiledCloudFormationTemplate.Outputs;
             Object.keys(resources).forEach(resourceName => {
               let resource = resources[resourceName];

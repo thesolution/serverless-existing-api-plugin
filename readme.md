@@ -10,13 +10,13 @@ This plugin adds support for deploying to existing APIGateways to Serverless
  - The plugin creates a unique Stage for testing so your existing stage is not clobbered
  - Deploying to a public state can be done with AWS CLI
 
-*Note*: This plugin supports Serverless Version 1.0 commit:242ad7bab4d44bf4c23c4476662e640452f2c5b9.  See Installation instructions.
+*Note*: This plugin supports Serverless Version 1.0.0-rc.2 or above
 
 ### Installation
 
  - make sure that aws is installed
  - @see http://docs.aws.amazon.com/cli/latest/userguide/installing.html
- - install serverless from the commit this plugin was tested against
+ - install serverless
  - install this plugin to your projects node_modules folder
 
 ```
@@ -35,16 +35,6 @@ plugins:
 custom:
   apiId: kzv4ton5o1
   rootResource: c3p7pdz0od
-```
-
-### Install Specific version of Serverless
-
-```
-git clone --depth 1 -n https://github.com/serverless/serverless.git
-git checkout 242ad7bab4d44bf4c23c4476662e640452f2c5b9
-cd serverless
-npm install 
-npm link
 ```
 
 ### Push your code!
